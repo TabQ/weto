@@ -1,0 +1,187 @@
+body, h1, h2, p, ul, ol, pre, input, textarea, th, td {margin: 0; padding: 0;}
+body, input, textarea {font-size: 12px; font-family: "Lucida Grande", Verdana, Lucida, Arial, Helvetica, 宋体, sans-serif;}
+#frame, #top_bar, #top_nav, #inner_footer, .nav {width: 1024px; height: auto; margin: auto; padding: 0;}
+#frame {margin: 12px auto;}
+#frame a {text-decoration: none;}
+#frame a:hover {color: #006699;}
+#main {width: auto; height: auto; margin: 0; padding: 0; float: left; border: solid #15A230 1px;}
+.user_main {width: 806px; height: 800px; margin: 0; padding: 12px; float: left; overflow:auto; border: solid #15A230 1px;}
+#top_bar {font-size: 50px; color: #15A230; margin-bottom: 4px;}
+#top_bar a {color: #15A230; text-decoration: none;}
+#top_nav {width: 100%; height: 40px; background: #15A230;}
+.nav li {list-style: none; height: 36px; float: left; margin: 2px 5px; font-weight: 700;}
+.nav li a {
+    color: #FFFFFF;
+    font-size: 20px;
+    letter-spacing: 0;
+    text-decoration: none;
+    line-height: 34px;
+    padding-top: 7px;
+    text-align: center;
+}
+.nav li a:hover {
+    color: #EEE;
+}
+.main_row {margin: 12px 7px;}
+.container {border:1px solid rgb(188,210,250); margin:0 4px; float: left;}
+.container, .container img{width:398px; height:270px;}
+.container img{border:0;vertical-align:top;}
+.container ul, .container li{list-style:none;margin:0;padding:0;}
+.num{ position:absolute; right:5px; bottom:5px; font:12px/1.5 tahoma, arial; height:18px;}
+.num li{
+    float: left;
+    color: #d94b01;
+    text-align: center;
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+    /*font-family: Arial;*/
+    font-size: 11px;
+    cursor: pointer;
+    margin-left: 3px;
+    border: 1px solid #f47500;
+    background-color: #fcf2cf;
+}
+.num li.on{
+    line-height: 18px;
+    width: 18px;
+    height: 18px;
+    font-size: 14px;
+    margin-top:-2px;
+    background-color: #ff9415;
+    font-weight: bold;
+    color:#FFF;
+}
+#hot_block {width: 398px; height: 270px; float: left; margin: 0 4px;}
+.sub_hot {height: 133px; border-bottom: 1px dotted;}
+.sub_hot a {text-decoration: none; color: #000;}
+.sub_hot p {text-indent: 2em; line-height: 16px; word-wrap: break-word;}
+.sub_hot p a {color: #336699;}
+.article {width: auto; height: 115px; overflow: hidden; text-overflow: clip;}
+.article h3 {text-align:center; white-space:nowrap;}
+.article h3 a:hover {color: #006699;}
+.bottom_more {width: auto; height: 18px;}
+.bottom_more a, .bottom_more a:hover {color: #336699;}
+/*主十大*/
+#top10 {
+    width: 398px; height: 325px; float: left; margin: 0 4px; overflow: hidden; text-overflow: ellipsis;
+    border: 1px solid #bacdde; border-radius: 6px; background: #f6f6f6 url(/templates/img/bg.top10title.jpg) repeat-x;
+}
+#top10 h3 {
+    display: block; height: 30px; margin-top: -1px; margin-left: -1px;
+    background: transparent url(/templates/img/top10today.png) no-repeat; line-height: 30px; padding: 0 170px;
+    border-bottom: 1px solid #346fa5;
+}
+#top10 ul {padding: 0; margin: 0; height: 275px;}
+#top10 ul li {
+    list-style: none;
+    padding-top: 1px; border-bottom: 1px dotted #d1d1d1;
+    background: transparent url(/templates/img/sp.top10item.gif) no-repeat 10px 0;
+}
+#top10 ul li div {display: block; height: 25px; padding-left: 28px; line-height: 26px; overflow: hidden; font-size: 13px;}
+#top10 ul li div a {color: #000; text-decoration: none;}
+#top10 ul li div a:hover {color: #006699}
+/*业主新闻*/
+.owners_news {width: 398px; margin: 0 4px; height: auto; float: left; background: none repeat scroll 0% 0% rgb(236,244,253);}
+.news_title {padding: 0 10px 0 5px; height: 28px; border-bottom: 1px solid #e3e5e4; text-align: right;}
+.news_title h2 {
+    margin: 0; display: block; float: left; width: 78px; height: 28px; background: url(/templates/img/yezhu_img.gif) 0 -119px no-repeat;
+    text-align: center; line-height: 28px; color: #fff; font-weight: bold;
+}
+.news_title h2 a, a:hover {text-decoration: none; color: #fff;}
+.news_title div {float: right; margin: 5px;}
+.news_title div a {text-decoration: none; font-size: 14px;  color: #336699;}
+.news_list {padding: 0px; border-bottom: 1px dotted silver; height: 290px;}
+.new_list a {color: #2754bb;}
+.newslist14px {margin:7px 5px 5px 5px; padding: 0 2px;}
+.newslist14px li{height:21px; margin: 8px 6px;}
+.newslist14px li span a,.newslist14px li span a:hover{font-size:14px; line-height:24px;}
+.newslist14px li a,.newslist14px li a:hover{font-size:14px; line-height:24px; color:#3D4351;}
+/*精彩贴图*/
+#pictures {margin: 0 4px; border: 1px solid #BCD2FA; border-top: none; text-align: left; background: #FAFAFA repeat-x;}
+#pictures h3 {
+    font-family: 宋体, Lucida Grande, Lucida Sans, Verdana, Arial, sans-serif;
+    display:block;margin:0;padding:0 16px;height:36px;line-height:40px;overflow:hidden;
+    color:rgb(52,111,165);background:transparent url(/templates/img/bg.blocktitle0.jpg) repeat-x;
+    border-bottom:1px solid #bcd2fa;font-weight:bold;font-size:16px;
+}
+#pictures ul {margin-top: 8px; text-align: center; font-size: 0; padding: 0;}
+#pictures ul li {display: inline-block; vertical-align: top; width: 192px; margin: 8px 4px; list-style: none;}
+#pictures ul li img {width: 192px; height: 144px; margin-bottom: 5px;}
+#pictures ul li a {color: #346fa5; line-height: 1.5; font-size: 12px; text-decoration:none;}
+#pictures ul li a.board {font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+#pictures ul li a.title {display:inline-block; width: 192px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+.half_block {width: 398px; height: 263px; float: left; border: solid goldenrod 1px; margin: 0 4px; overflow: hidden; text-overflow: ellipsis;}
+.article_list {list-style:none; overflow: hidden; text-overflow: clip; white-space:nowrap;}
+.article_list a {text-decoration:none;}
+
+.half_block_boards {width: 398px; height: auto; float: left; border: solid #BCD2FA 1px; border-top: none; text-align: left; margin: 0 4px;}
+.half_block_boards a {color: #336699; text-decoration: none;}
+.half_block_boards .topics ul {padding: 6px 16px; margin-top: 2px; height: 280px;}
+.half_block_boards .topics ul li {height: 28px;}
+.half_block_boards .topics a {font-size: 14px; line-height: 28px;}
+
+.one_block {width: 806px; min-height: 76px; margin: 0 4px; border: solid #BCD2FA 1px;}
+.one_block a {color: #336699; text-decoration: none;}
+.block_header {
+    margin: 0; padding: 0 16px; height: 36px; line-height: 40px; overflow: hidden;
+    color: #346fa5; background: transparent url(/templates/img/bg.blocktitle0.jpg) repeat-x;
+    border-bottom: 1px solid #BCD2FA;font-weight: bold; font-size: 16px;
+}
+.topics {height: 300px; overflow: hidden; text-overflow: ellipsis;}
+.boards {height: 80px; border-top: 1px solid #ccc; overflow: auto; text-overflow: ellipsis;}
+.user_div {border: solid #15A230 2px; border-radius: 6px; margin: 250px auto;width: 400px; font-size: 18px;}
+.user_div a {color: #336699;}
+.user_div .user_input input {width: 200px; height: 26px;}
+#right_side {width: auto; height: auto; margin-left: 12px; padding: 0; float: left;}
+#user_info {width: 176px; height: auto; border: 1px solid #15A230; margin: 0; padding: 0;}
+#user_info a {color: #336699;}
+#user_info_avatar {margin: 12px 22px; width: 128px; height: 128px;}
+#life_query {width: 176px; height: auto; border: 1px solid #15A230; margin-top: 12px; padding: 0;}
+#life_query p {margin: 12px; width: auto; overflow: hidden; text-overflow: clip; white-space: nowrap; color: #336699;}
+#life_query p a {color: #336699;}
+#life_query p a span {display: block; width: 75px;overflow: hidden; text-overflow: clip; white-space: nowrap;}
+.user_row {margin: 12px; width: auto;}
+.user_label {float: left; width: 100px;}
+.user_input, .user_hint {float: left;}
+.user_msg_error {color: red;}
+.user_msg_correct {color: green;}
+.user_msg_wait {color: #808080;}
+.user_button_block {float: left; width: 160px;}
+.user_action_block {float: left; width: 72px;}
+.user_button {width: 80px; height: 30px; display: block; margin: 0 auto;}
+.user_action {width: 60px; height: 30px; display: block; margin: 0 auto; text-align: center;}
+.blocks_div {width: 806px; height: auto; margin: 12px 8px; border: solid green 1px;}
+.div_item {float: left; height: auto;width: auto;/*80px*/ margin: 12px; overflow: hidden; text-overflow: clip; white-space: nowrap;}
+.div_item_curr {float: left; height: auto;width: auto; margin: 12px; overflow: hidden; text-overflow: clip; white-space: nowrap; color: red;}
+#articles_header {width: 806px; height: 25px; margin: 0 8px; padding-top: 4px; border: solid goldenrod 1px; border-radius: 3px;}
+.article_item {width: 806px; height: 30px; margin: 0 8px; padding-top: 10px; border-bottom: solid goldenrod 1px;}
+.action_page {width: 806px; height: auto; margin: 8px 8px; padding: 0 4px;}
+.article_category {float: left; width: 41px; margin: 2px; text-align: center;}
+.article_name {float: left; width: 60px; margin: 2px; overflow: hidden; text-overflow: clip; white-space: nowrap;}
+.article_subject {float: left; width: 293px; margin: 2px; overflow: hidden; text-overflow: "..."; white-space: nowrap;}
+.article_create_time {float: left; width: 80px; margin: 2px;}
+.article_author {float: left; width: 80px; margin: 2px; overflow: hidden; text-overflow: clip; white-space: nowrap;}
+.article_reply_read {float: left; width: 60px; margin: 2px; overflow: hidden; text-overflow: clip; white-space: nowrap;}
+.article_reply_time {float: left; width: 80px; margin: 2px;}
+.article_reply_author {float: left; width: 80px; margin: 2px; overflow: hidden; text-overflow: clip; white-space: nowrap;}
+.inner_text {float: left; margin: 0 4px; padding-top: 10px; overflow: hidden; text-overflow: clip; white-space: nowrap;}
+#reply_view {float: left; width: 160px; height: 37px; margin: 4px 0;}
+#article_title {float: left; width: 645px; height: 37px; margin: 4px 0; border-left: #BCD2FA solid 1px;}
+#article_title .inner_text {font-size: 16px;}
+#poster {float: left; width: 160px; min-height: 460px;}
+#post_detail {float: left; width: 645px; border-left: #BCD2FA solid 1px;}
+#post_content {padding: 12px; min-height: 376px; overflow: auto;}
+#post_bottom {height: 37px; border-top: dashed #CDCDCD 1px;}
+.author_time {height: 37px; border-bottom: dashed #CDCDCD 1px;}
+#avatar {margin: 10px 16px;}
+/*自动换行*/
+#poster_info {margin: 10px 20px; word-wrap: break-word; word-break: normal;}
+.user_detail {margin: 10px 0;}
+.admin_input {width: 500px;}
+.admin_item {width: 800px; height: auto; margin: 4px; border: solid goldenrod 2px;}
+
+#veg_table th, #veg_table td {height: 30px;}
+#footer {width: auto; border-top: solid #15A230 1px;}
+.clear {clear: both;}

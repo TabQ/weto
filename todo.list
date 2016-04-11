@@ -1,0 +1,29 @@
+[Done] forum关闭(closed =1)， 禁止访问旗下articles
+[Done] articles中处理inner_text宽度及字符溢出问题
+[Done] 发贴时内容判空，使用kindeditor syn等
+[Done] 回复时内容判空，使用kindeditor syn等
+非主贴回复功能
+检查所有<a title>及<img />做好seo
+blocks.php中上部forums list item做好样式
+[不需要]weto_post表加fid字段，主要为删除时方便跳转forum.php
+检测所有noaccess的地方，该处原写禁言七天，调用时按无权访问时调用
+article.php未做非法访问URL检测
+[Done]article.php中做删除操作时未考虑lastpost情况，程序中所涉及的关于weto_article表中lastpost字段的地方（大量出现在首页）也未考虑
+[Done]article.php中做删除操作时未更新weto_articles中的replies字段
+检查并更改所有只获取一条记录未使用while的$result->fetch_assoc()
+article.php机器人可作delete、top/notop、digest/nodigest操作，未做相关处理
+article.php做删贴、编辑时、置顶及精华时未考虑user被禁的情况
+user被禁时也没有考虑其做其他操作（修改个人中心、忘记密码等）的情况
+articles.php做删除操作时没考虑更新非楼主的weto_users的相关字段
+blocks_ext.php中正则判断name有待更正
+上传图片加水印
+/admin中设置各版面预先设定置顶内容
+
+/********************************************************************/
+color: #70B132;
+container img{width:370px; height:250px;}
+#hot_block {width: 425px; height: 250px; float: left; margin: 0 4px;}
+.sub_hot {height: 123px; border-bottom: 1px dotted;}
+
+<a id="support" href="support.php?pfid=<{echo $preforum['id']}>" title="支持"><img src="/templates/img/agree.gif" alt="支持" /></a>
+<input type="hidden" id="pfid" value="<{echo $preforum['id']}>" />
