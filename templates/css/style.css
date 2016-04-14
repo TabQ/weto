@@ -1,12 +1,12 @@
 body, h1, h2, p, ul, ol, pre, input, textarea, th, td {margin: 0; padding: 0;}
 body, input, textarea {font-size: 12px; font-family: "Lucida Grande", Verdana, Lucida, Arial, Helvetica, 宋体, sans-serif;}
-#frame, #top_bar, #top_nav, #inner_footer, .nav {width: 1024px; height: auto; margin: auto; padding: 0;}
+#frame, #top_bar, #top_nav, .nav {width: 1024px; height: auto; margin: auto; padding: 0;}
 #frame {margin: 12px auto;}
 #frame a {text-decoration: none;}
 #frame a:hover {color: #006699;}
 #main {width: auto; height: auto; margin: 0; padding: 0; float: left; border: solid #15A230 1px;}
 .user_main {width: 806px; height: 800px; margin: 0; padding: 12px; float: left; overflow:auto; border: solid #15A230 1px;}
-#top_bar {font-size: 50px; color: #15A230; margin-bottom: 4px;}
+#top_bar {font-size: 60px; color: #15A230; margin-bottom: 4px;}
 #top_bar a {color: #15A230; text-decoration: none;}
 #top_nav {width: 100%; height: 40px; background: #15A230;}
 .nav li {list-style: none; height: 36px; float: left; margin: 2px 5px; font-weight: 700;}
@@ -155,8 +155,8 @@ body, input, textarea {font-size: 12px; font-family: "Lucida Grande", Verdana, L
 .blocks_div {width: 806px; height: auto; margin: 12px 8px; border: solid green 1px;}
 .div_item {float: left; height: auto;width: auto;/*80px*/ margin: 12px; overflow: hidden; text-overflow: clip; white-space: nowrap;}
 .div_item_curr {float: left; height: auto;width: auto; margin: 12px; overflow: hidden; text-overflow: clip; white-space: nowrap; color: red;}
-#articles_header {width: 806px; height: 25px; margin: 0 8px; padding-top: 4px; border: solid goldenrod 1px; border-radius: 3px;}
-.article_item {width: 806px; height: 30px; margin: 0 8px; padding-top: 10px; border-bottom: solid goldenrod 1px;}
+#articles_header {width: 806px; height: 25px; margin: 0 8px; padding-top: 4px; border: solid #346fa5 1px; border-radius: 3px;}
+.article_item {width: 806px; height: 30px; margin: 0 8px; padding-top: 10px; border-bottom: solid #346fa5 1px;}
 .action_page {width: 806px; height: auto; margin: 8px 8px; padding: 0 4px;}
 .article_category {float: left; width: 41px; margin: 2px; text-align: center;}
 .article_name {float: left; width: 60px; margin: 2px; overflow: hidden; text-overflow: clip; white-space: nowrap;}
@@ -181,7 +181,8 @@ body, input, textarea {font-size: 12px; font-family: "Lucida Grande", Verdana, L
 .user_detail {margin: 10px 0;}
 .admin_input {width: 500px;}
 .admin_item {width: 800px; height: auto; margin: 4px; border: solid goldenrod 2px;}
-
 #veg_table th, #veg_table td {height: 30px;}
 #footer {width: auto; border-top: solid #15A230 1px;}
+#inner_footer {width: 1024px; height: auto; margin: 12px auto;}
+.footer_item {margin: 36px;}
 .clear {clear: both;}

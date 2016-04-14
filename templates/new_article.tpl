@@ -6,7 +6,7 @@
         </div>
         <p>内容：</p>
         <div class="user_row">
-            <textarea id="new_article" name="new_article" style="width:700px; height:300px"></textarea>
+            <textarea id="new_article" name="new_article" style="width:700px; height:500px"></textarea>
         </div>
         <div class="user_row">
             <div class="user_button_block"><input type="submit" value="确  定" class="user_button" id="confirm" /></div>

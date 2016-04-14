@@ -55,6 +55,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit;
     }
 
+    // 为90起航主机怪异行为做处理
+    $_POST['new_article'] = stripslashes($_POST['new_article']);
+
     $attachment = 0;
     if(preg_match_all('/<img[^\/]+?src="(\/uploads\/.+?)".*?\/>/i', $_POST['new_article'], $matches, PREG_SET_ORDER)) {
         $_POST['new_article'] = preg_replace('/<img[^\/]+?src="(\/uploads\/.+?)".*?\/>/i', '<p><a href="$1"><img src="$1" width="400px" height="300px" /></a></p><br />', $_POST['new_article']);
@@ -79,6 +82,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $query = "insert into weto_posts(aid, firstpost, uid, author, message, createtime, edittime, attachment)
                   values($aid, 1, $uid, '$username', '$content', $now, $now, $attachment)";
         if($result = $mysqli->query($query)) {
+            $pid = $mysqli->insert_id;
             // 更新weto_forums
             $query = "update weto_forums set articles=articles+1 where id=$fid";
             if(!$result = $mysqli->query($query)) {
@@ -91,7 +95,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
             // 插入附件
             if($attachment) {
-                $pid = $mysqli->insert_id;
                 foreach($matches as $match) {
                     $query = "insert into weto_attachments(aid, pid, path, uid) values($aid, $pid, '$match[1]', $uid)";
                     if(!$result = $mysqli->query($query)) {

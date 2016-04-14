@@ -104,9 +104,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     $name = trim($_POST['name']);
-    if(preg_match('/^[a-zA-Z0-9\x{4e00}-\x{9fa5}]{1,5}$/u', $name) != 1) {
+    if(preg_match('/^[a-zA-Z0-9\x{4e00}-\x{9fa5}]{1,10}$/u', $name) != 1) {
         $mysqli->close();
-        $json_arr = array('code' => -3, 'msg' => '最多5个中文字符、英文字符或数字');
+        $json_arr = array('code' => -3, 'msg' => '最多10个中文字符、英文字符或数字');
         echo json_encode($json_arr);
         exit;
     } else {

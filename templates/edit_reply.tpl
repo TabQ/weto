@@ -8,7 +8,7 @@
         <p>内容：</p>
         <{/if}>
         <div class="user_row">
-            <textarea id="message" name="message" style="width:700px; height:300px"><{echo $this->post['message']}></textarea>
+            <textarea id="message" name="message" style="width:700px; height:500px"><{echo $this->post['message']}></textarea>
         </div>
         <div class="user_row">
             <div class="user_button_block"><input type="submit" value="确  定" class="user_button" id="confirm" /></div>

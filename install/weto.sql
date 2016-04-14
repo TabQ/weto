@@ -74,7 +74,7 @@ DROP TABLE IF EXISTS weto_preforums;
 CREATE TABLE weto_preforums (
   id smallint(5) unsigned NOT NULL AUTO_INCREMENT,
   bid tinyint(3) unsigned  NOT NULL DEFAULT 0,
-  name char(16) NOT NULL DEFAULT '',
+  name char(30) NOT NULL DEFAULT '',
   proposer char(16) NOT NULL DEFAULT '',
   time int(10) unsigned NOT NULL DEFAULT 0,
   seotitle varchar(255) NOT NULL DEFAULT '',
@@ -124,7 +124,7 @@ DROP TABLE IF EXISTS weto_forums;
 CREATE TABLE weto_forums (
   id smallint(5) unsigned NOT NULL AUTO_INCREMENT,
   bid tinyint(3) unsigned  NOT NULL DEFAULT 0,
-  forumname char(16) NOT NULL DEFAULT '',
+  forumname char(30) NOT NULL DEFAULT '',
   articles int(10) unsigned NOT NULL DEFAULT 0,
   posts int(10) unsigned NOT NULL DEFAULT 0,
   rank tinyint(3) unsigned NOT NULL DEFAULT 0,

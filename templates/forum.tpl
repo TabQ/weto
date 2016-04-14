@@ -6,7 +6,7 @@
     <{else}>
         <div id="main">
             <div class="main_row">
-                <div class="one_block" style="border: solid goldenrod 1px; border-radius: 6px;">
+                <div class="one_block" style="border: solid #346fa5 1px; border-radius: 6px;">
                     <div class="div_item_curr"><{echo $this->forumname}></div>
                     <{if(!empty($this->adminlist))}>
                     <div class="div_item">版主：</div>

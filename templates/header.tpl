@@ -27,9 +27,9 @@
     </ul>
     <{else}>
     <ul class="nav">
-        <li><a href="/admin/index.php" class="curr" class="first">基本信息</a></li>
+        <li><a href="/admin/index.php">基本信息</a></li>
         <li><a href="/admin/blocks.php">版块设置</a></li>
-        <li><a href="/admin/forums.php" class="last">论坛设置</a></li>
+        <li><a href="/admin/forums.php">论坛设置</a></li>
     </ul>
     <{/if}>
 </div>

@@ -3,7 +3,7 @@
 <div id="frame">
     <div id="main" style="min-height: 800px;">
         <div class="main_row">
-            <div class="one_block" style="border: solid goldenrod 1px; border-radius: 6px; margin-top: 12px;">
+            <div class="one_block" style="border: solid #346fa5 1px; border-radius: 6px; margin-top: 12px;">
                 <div class="div_item_curr">
                     已开通版面：
                 </div>
@@ -14,7 +14,7 @@
                 <{/foreach}>
                 <div class="clear"></div>
             </div>
-            <div class="one_block" style="border: solid goldenrod 1px; border-radius: 6px; margin-top: 12px;">
+            <div class="one_block" style="border: solid #346fa5 1px; border-radius: 6px; margin-top: 12px;">
                 <div class="div_item_curr">
                     申请中版面：
                 </div>
@@ -37,7 +37,7 @@
                 <{/foreach}>
                 <div class="clear"></div>
             </div>
-            <div class="one_block" style="border: solid goldenrod 1px; border-radius: 6px; margin-top: 12px;">
+            <div class="one_block" style="border: solid #346fa5 1px; border-radius: 6px; margin-top: 12px;">
                 <form id="preforum_form" method="post">
                     <div class="user_row" style="margin: 20px 12px;">
                         <div style="float: left;"><p style="text-align: right;margin-top: 6px;">名称：</p></div>

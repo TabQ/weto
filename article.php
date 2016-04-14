@@ -76,6 +76,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
         }
 
+        // 为90起航主机怪异行为做处理
+        $_POST['message'] = stripslashes($_POST['message']);
+
         $attachment = 0;
         if(preg_match_all('/<img[^\/]+?src="(\/uploads\/.+?)".*?\/>/i', $_POST['message'], $matches, PREG_SET_ORDER)) {
             $_POST['message'] = preg_replace('/<img[^\/]+?src="(\/uploads\/.+?)".*?\/>/i', '<p><a href="$1"><img src="$1" width="400px" height="300px" /></a></p><br />', $_POST['message']);
@@ -86,7 +89,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         } else {
             $content = $_POST['message'];
         }
-        $query = "update weto_posts set message='$content', edittime=$now where id=$_GET[pid]";
+        $query = "update weto_posts set message='$content', edittime=$now, attachment=$attachment where id=$_GET[pid]";
         if($result = $mysqli->query($query)) {
             // 更新附件
             if($attachment) {
@@ -119,6 +122,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             exit;
         }
     }
+
+    // 为90起航主机怪异行为做处理
+    $_POST['message'] = stripslashes($_POST['message']);
 
     // 发表回复
     $attachment = 0;

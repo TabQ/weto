@@ -1,6 +1,6 @@
 <div id="main">
     <div class="main_row">
-        <div class="one_block" style="min-height: 0px; border: solid #c2d5e3 2px;">
+        <div class="one_block" style="min-height: 0px; border: solid #346fa5 1px;">
             <div id="reply_view">
                 <div class="inner_text" style="width:72px;text-align: right;">查看：<{echo $this->article['views']}></div>
                 <div class="inner_text" style="width:72px;">|&nbsp;回复：<{echo $this->article['replies']}></div>
@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="main_row">
-        <div class="one_block" style="border: solid #c2d5e3 2px;">
+        <div class="one_block" style="border: solid #346fa5 1px;">
             <div id="poster">
                 <div class="author_time"><div class="inner_text" style="width: 150px;margin-left: 12px;"><{echo $this->article['author']}></div></div>
                 <div id="avatar">

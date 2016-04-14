@@ -1,5 +1,5 @@
 <div class="main_row">
-    <div class="one_block" style="border: solid goldenrod 1px; border-radius: 6px;">
+    <div class="one_block" style="border: solid #346fa5 1px; border-radius: 6px;">
         <{if(is_null($this->fid))}>
         <div class="div_item_curr">
             全  部

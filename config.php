@@ -3,9 +3,9 @@ define('SITE_ROOT', str_replace('\\', '/', dirname(__FILE__)));
 define('FORBIDDEN_TIME', 7 * 24 * 3600);
 define('PREFORUM_OVERDUE', 10 * 24 * 3600);
 define('PREADMINS_OVERDUE', 10 * 24 * 3600);
-define('ITEMS_PER_PAGE', 10);
-define('MAX_AVATAR_INDEX', 27);
-define('MAX_SUPPORTERS', 3);       // 申请版面最大支持者数
+define('ITEMS_PER_PAGE', 50);
+define('MAX_AVATAR_INDEX', 15);
+define('MAX_SUPPORTERS', 50);       // 申请版面最大支持者数
 define('MAX_SUPPORT_PREADMINS', 30);    // 申请版主最大支持者数
 define('MAX_ADMINS', 3);            // 版主最多数目
 

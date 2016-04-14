@@ -1,5 +1,10 @@
 <div id="main">
     <div class="main_row">
+        <div style="border:1px solid #d9e7ff;border-radius:4px;background:#f2f6f9;margin:0 4px;padding:4px 5px;line-height:14px;">
+            <a href="/forum.php?fid=20" title="微兔社区发展公告">系统刚刚开发完毕，欢迎大家灌水并将发现的bug以及发展建议等发送至建议反馈版面，非常感谢！</a>
+        </div>
+    </div>
+    <div class="main_row">
         <div class="container" id="idContainer2">
             <ul id="idSlider2">
                 <{foreach($this->top_imgs as $item)}>
@@ -189,7 +194,7 @@
     <div class="main_row">
         <div class="one_block">
             <div class="block_header">
-                <div style="float: left;"><a href="/blocks.php?bid=5">为您服务</a></div>
+                <div style="float: left;"><a href="/blocks.php?bid=5">微兔社区</a></div>
                 <div style="float: right;"><a href="/blocks.php?bid=5">更多</a></div>
             </div>
             <{foreach($this->boards_arr[5] as $item)}>

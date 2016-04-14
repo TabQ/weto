@@ -44,7 +44,7 @@
             var input_val = trim($(element).val());
             switch(id) {
                 case 'username':
-                    var reg_str = /[a-z0-9_\-]{3,16}/i;
+                    var reg_str = /^[a-z0-9_-]{3,16}$/i;
                     var msg = ' 用户名由3-16个英文字母、数字及特殊字符-_组成';
                     return check_item(id, input_val, reg_str, msg);
                 case 'email':
@@ -52,7 +52,7 @@
                     var msg = ' 邮箱地址未验证成功';
                     return check_item(id, input_val, reg_str, msg);
                 case 'password':case 'password2':
-                var reg_str = /[a-zA-Z0-9!@#%&_\-\$]{5,20}/;
+                var reg_str = /^[a-zA-Z0-9!@#%&_\-\$]{5,20}$/;
                 var msg = ' 密码由5-20位英文字母、数字及特殊字符!@#$%&_-组成';
                 return check_item(id, input_val, reg_str, msg);
                 default:
